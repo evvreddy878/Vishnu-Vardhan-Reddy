@@ -1,0 +1,172 @@
+
+******BUG REPORT FOR LOGIN FAILURE *******
+
+
+Bug Name: login failure 
+Bug ID: *****
+Area Path: menu > login
+Build Number:  
+Severity: HIGH 
+Priority: HIGH 
+Assigned to: Developer-X
+Reported By: Vishnu
+Reported On: 02/20/2017
+Reason: Defect
+Status: New
+Environment: Windows8 / SQL Server 2013
+
+Description:
+Login failure When you try to login at Chase Bank application
+
+Steps To Reproduce:
+1) Open  the application www.chase.com
+2) Navigate to the Users Menu > login
+3) Filled usename(user1) and password(user1)
+4) Seen an error page “Login Failure”
+5) please see the attachments
+
+Expected result: On clicking login button, should be prompted to Login Page.
+
+
+
+*****Sample of a Test Case******
+
+Title: Login Page – Authenticate Successfully on gmail.com
+
+Description: A registered user should be able to successfully login at gmail.com.
+
+Precondition: The user must already be registered with an email address (evvreddy@gmail.com) and passwor (123456)
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+1.Navigate to gmail.com
+
+2.In the ’email’ field, enter the email of the registered user.
+3.Click the ‘Next’ button.
+4.Enter the password of the registered user
+5.Click ‘Sign In’
+
+
+Expected Result: A page displaying the gmail user’s inbox should load, showing any new message at the top of the page.
+
+
+
+
+******write a test cases on atm machines work ?***********
+
+Positive Test Cases
+
+Machine accepts card and PIN detail.
+Machine successfully takes out the money.
+Machine takes out the balance printout after the withdrawal.
+Machine logs out of the client session immediately after withdrawal successfully.
+Machine prints out balance inquiry standalone as part of menu operation.
+Machine generates invalid money error due to money asked larger than the savings account balance.
+Machine checks for the idle time in between the client session and wait period while active in account.
+Machine accepts both Visa and Mastercard credit and debit cards.
+
+        Negative Test Cases
+
+Machine does not accept card and PIN.
+Machine finds wrong PIN.
+Machine finds card insertion in wrong way.
+Machine takes 3 invalid PIN attempt.
+Invalid account type selected in the menu.
+Lack of money in the savings account.
+Expired card inserted in the machine.
+Money amount less than 100 entered in the machine.
+Machine does not take out the money.
+Machine can’t take out the balance after withdrawal.
+Machine can’t log out of client session after withdrawal.
+Machine doesn’t print the withdrawal amount.
+Machine does not accept either Visa or mastercard or both debit/credit cards.
+
+
+                     ----OR---
+
+Verify the slot for ATM Card insertion is as per the specification
+Verify that user is presented with options when card is inserted from proper side
+Verify that no option to continue and enter credentials is displayed to user when card is inserted correctly
+Verify that font of the text displayed in ATM screen is as per the specifications
+Verify that touch of the ATM screen is smooth and operational
+Verify that user is presented with option to choose language for further operations
+Verify that user asked to enter pin number before displaying any card/bank account detail
+Verify that there are limited number of attempts upto which user is allowed to enter pin code
+Verify that if total number of incorrect pin attempts gets surpassed then user is not allowed to continue further- operations like blocking of card etc gets initiated
+Verify that pin is encrypted and when entered
+Verify that user is presented with different account type options like- saving, current etc
+Verify that user is allowed to get account details like available balance
+Verify that user same amount of money gets dispatched as entered by user for cash withdrawal
+Verify that user is only allowed to enter amount in multiples of denominations as per the specifications
+Verify that user is prompted to enter the amount again in case amount entered is not as per the specification and proper message should be displayed for the same
+Verify that user cannot fetch more amount than the total available balance
+Verify that user is provided the option to print the transaction/enquiry
+Verify that user user's session timeout is maintained and is as per the specifications
+Verify that user is not allowed to exceed one transaction limit amount
+Verify that user is not allowed to exceed one day transaction limit amount
+Verify that user is allowed to do only one transaction per pin request
+Verify that user is not allowed to proceed with expired ATM card
+Verify that in case ATM machine runs out of money, proper message is displayed to user
+Verify that in case sudden electricity loss in between the operation, the transaction is marked as null and amount is not withdrawn from user's account
+
+
+**************** Validate Email functionality******************
+
+
+
+Verify that a newly received email is displayed as highlighted in the Inbox section.
+Verify that a newly received email has correctly displayed sender emailId or name, mail subject and mail body(trimmed to single line).
+Verify that on clicking the newly received email, user is navigated to email content.
+Verify that the email contents are correctly displayed with the desired source formatting.
+Verify that any attachments are attached to the email and is downloadable.
+Verify that the attachments are scanned for viruses before download.
+Verify that all the emails marked as read are not highlighted.
+Verify that all the emails read as well as unread have a mail read time appended at the end on the email list displayed in the inbox section.
+Verify that count of unread emails is displayed alongside 'Inbox' text in left sidebar of GMail.
+Verify that unread email count increases by one on receiving a new email.
+Verify that unread email count decreases by one on reading an email ( marking email as read).
+Verify that email recipients in cc are visible to all user.
+Verify that email recipients in bcc are not visible to user.
+Verify that all received emails get piled up in the 'Inbox' section and gets deleted in cyclic fashion based on the size availability.
+Verify that email can be received from non-gmail emailIds like - yahoo, hotmail etc.
+
+
+
+
+**********************Shopping cart*******************
+
+1) Shopping cart holds the items till the session is active. As soon as session is closed the shopping cart should be refreshed.
+
+2) Shopping cart should not contain duplicate items, although user can add quantities of the product to be purchased
+
+3) Users should be able to delete items from shopping cart and those deleted items should not be proceeded for further payment
+
+4) Shopping cart should contain the price of the product, its name and link to the product's details
+
+5) Shopping cart should display all the products which user wants to purchase
+
+6) check whether the added product is correctly displaying..some times.. may be some other product can appear...
+
+7) Is there any cross selling product that means..if we buy one product then we must buy that cross selling product.
+
+8) In shopping cart,whether it is calculating the price correctly or not(The price of the cross selling product should be included)
+
+9) Check whether it is calculating the shipping charges,tax,packing price etc correctly.
+
+10) Check how many times the cross selling products are appearing in the lists...of cart..
+
+11) check whether the special offers (optional)if selected means they also should include in cart.
+
+12) Check whether the transaction is done properly or not.
+
+
+
+
+
+
+
+
+
+
+

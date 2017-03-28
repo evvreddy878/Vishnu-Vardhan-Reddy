@@ -1,0 +1,141 @@
+
+******BUG REPORT FOR LOGIN FAILURE *******
+
+
+Bug Name: login failure 
+Bug ID: *****
+Area Path: menu > login
+Build Number:  
+Severity: HIGH 
+Priority: HIGH 
+Assigned to: Developer-X
+Reported By: Vishnu
+Reported On: 02/20/2017
+Reason: Defect
+Status: New
+Environment: Windows8 / SQL Server 2013
+
+Description:
+Login failure When you try to login at Chase Bank application
+
+Steps To Reproduce:
+1) Open  the application www.chase.com
+2) Navigate to the Users Menu > login
+3) Filled usename(user1) and password(user1)
+4) Seen an error page “Login Failure”
+5) please see the attachments
+
+Expected result: On clicking login button, should be prompted to Login Page.
+
+
+
+*****Sample of a Test Case******
+
+Title: Login Page – Authenticate Successfully on gmail.com
+
+Description: A registered user should be able to successfully login at gmail.com.
+
+Precondition: The user must already be registered with an email address (evvreddy@gmail.com) and passwor (123456)
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+1.Navigate to gmail.com
+
+2.In the ’email’ field, enter the email of the registered user.
+3.Click the ‘Next’ button.
+4.Enter the password of the registered user
+5.Click ‘Sign In’
+
+
+Expected Result: A page displaying the gmail user’s inbox should load, showing any new message at the top of the page.
+
+
+
+
+******write a test cases on atm machines work ?***********
+
+Positive Test Cases
+
+Machine accepts card and PIN detail.
+Machine successfully takes out the money.
+Machine takes out the balance printout after the withdrawal.
+Machine logs out of the client session immediately after withdrawal successfully.
+Machine prints out balance inquiry standalone as part of menu operation.
+Machine generates invalid money error due to money asked larger than the savings account balance.
+Machine checks for the idle time in between the client session and wait period while active in account.
+Machine accepts both Visa and Mastercard credit and debit cards.
+
+        Negative Test Cases
+
+Machine does not accept card and PIN.
+Machine finds wrong PIN.
+Machine finds card insertion in wrong way.
+Machine takes 3 invalid PIN attempt.
+Invalid account type selected in the menu.
+Lack of money in the savings account.
+Expired card inserted in the machine.
+Money amount less than 100 entered in the machine.
+Machine does not take out the money.
+Machine can’t take out the balance after withdrawal.
+Machine can’t log out of client session after withdrawal.
+Machine doesn’t print the withdrawal amount.
+Machine does not accept either Visa or mastercard or both debit/credit cards.
+
+
+
+
+
+*********************write test cases on how shopping cart functionality works ?**********************
+
+
+1) Shopping cart holds the items till the session is active. As soon as session is closed the shopping cart should be refreshed.
+
+2) Shopping cart should not contain duplicate items, although user can add quantities of the product to be purchased
+
+3) Users should be able to delete items from shopping cart and those deleted items should not be proceeded for further payment
+
+4) Shopping cart should contain the price of the product, its name and link to the product's details
+
+5) Shopping cart should display all the products which user wants to purchase
+
+6) check whether the added product is correctly displaying..some times.. may be some other product can appear...
+
+7) In shopping cart,whether it is calculating the price correctly or not(The price of the cross selling product should be included)
+
+8) Check whether it is calculating the shipping charges,tax,packing price etc correctly.
+
+9) Check how many times the cross selling products are appearing in the lists...of cart..
+
+10) check whether the special offers (optional)if selected means they also should include in cart.
+
+11) Check whether the transaction is done properly or not.
+
+
+-------------------------Performance testing -------------
+
+speed
+capacity
+cost saving
+stability
+accuracy
+Endurance
+
+**need **
+impress users
+meet user expectations
+main task work flows
+****
+**load test**
+**stress Test**
+**Endurance Test**
+Automated REST API testing using JMeter and automated UI using Selenium Webdriver 
+
+
+
+
+
+
+
+
+

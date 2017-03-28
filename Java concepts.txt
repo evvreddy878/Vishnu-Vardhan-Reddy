@@ -1,0 +1,133 @@
+How to do inheritance in java (using extend keyword)
+
+class Calculation {
+   int z;
+	
+   public void addition(int x, int y) {
+      z = x + y;
+      System.out.println("The sum of the given numbers:"+z);
+   }
+	
+   public void Subtraction(int x, int y) {
+      z = x - y;
+      System.out.println("The difference between the given numbers:"+z);
+   }
+}
+
+public class My_Calculation extends Calculation {
+   public void multiplication(int x, int y) {
+      z = x * y;
+      System.out.println("The product of the given numbers:"+z);
+   }
+	
+   public static void main(String args[]) {
+      int a = 20, b = 10;
+      My_Calculation demo = new My_Calculation();
+      demo.addition(a, b);
+      demo.Subtraction(a, b);
+      demo.multiplication(a, b);
+   }
+}
+
+
+
+
+****************write code to add items to integer, string array
+
+public String[] increaseArray(String[] theArray, int increaseBy)  
+{  
+    int i = theArray.length;  
+    int n = ++i;  
+    String[] newArray = new String[n];  
+    for(int cnt=0;cnt<theArray.length;cnt++)
+    {  
+        newArray[cnt] = theArray[cnt];  
+    }  
+    return newArray;  
+}
+
+
+ArrayList<String> ar = new ArrayList<String>();
+String s1 ="Test1";
+String s2 ="Test2";
+String s3 ="Test3";
+ar.add(s1);
+ar.add(s2);
+ar.add(s3);
+
+String s4 ="Test4";
+ar.add(s4);
+
+
+
+*********write code to retrieve items from integer, string array
+
+While loop
+
+public void test() {
+    int[] nums = {5,1,2,11,3};
+
+    Arrays.sort(nums);
+
+    String[] stringNums = new String[nums.length];
+    int i = 0;
+    while (i < nums.length) {
+        stringNums[i] = String.valueOf(nums[i++]);
+    }
+
+    Assert.assertArrayEquals(new String[]{"1","2","3","5","11"}, stringNums);
+
+}
+
+
+********write code to add items HashMap
+
+package name;
+
+import java.util.*;
+
+public class HashMapDemo {
+   public static void main(String args[]) {
+   // create hash map
+   HashMap newmap = new HashMap();
+      
+   // populate hash map
+   newmap.put(1, "hello");
+   newmap.put(2, "hi");
+   newmap.put(3, "is best");
+      
+   System.out.println("Map value before change: "+ newmap);
+      
+   // put new values at key 3
+   String prevvalue=(String)newmap.put(3,"is great");
+      
+   // check returned previous value
+   System.out.println("Returned previous value: "+ prevvalue);
+      
+   System.out.println("Map value after change: "+ newmap);
+   }    
+}  
+
+*************write code to retrieve items HashMap
+
+while(i.hasNext())
+{
+    Entry e = i.next();
+    String key = e.getKey();  
+    String value = e.getValue();
+    System.out.println(key + " " + value);
+}
+In short you could also use the following code (which also keeps the type information). Using Iterator is pre-Java-1.5 style somehow.
+
+for(Entry<String, String> entry : facilities.entrySet()) {
+    String key = entry.getKey();
+    String value = entry.getValue();
+    System.out.println(key + " " + value);
+}
+
+
+
+
+
+
+

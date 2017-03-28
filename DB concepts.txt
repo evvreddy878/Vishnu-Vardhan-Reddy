@@ -1,0 +1,167 @@
+Why testing is required?
+Testing is required for an effective performance of software application or product. 
+It's important to ensure that the application should not result into any failures because it can be very 
+expensive in the future or in the later stages of the development. It's required to stay in the business.
+
+
+what is SDLC and different phases in SDLC?
+Software Development Life Cycle, or SDLC is a process used to develop software. 
+There are different stages or phases within the Software Development Life Cycle and in each phase, different activities take place.
+
+
+what is waterfall method
+The waterfall model is a sequential (non-iterative) design process, used in software development processes,
+ in which progress is seen as flowing steadily downwards (like a waterfall) 
+through the phases of conception, initiation, analysis, design, construction, testing, production/implementation and maintenance.
+
+
+what is agile method
+
+The Agile movement seeks alternatives to traditional project management. Agile approaches help teams respond to unpredictability 
+through incremental, iterative work cadences 
+and empirical feedback. Agilists propose alternatives to waterfall, or traditional sequential development.
+
+
+what is scrum methodology
+
+Scrum is an agile way to manage a project, usually software development. Agile software development with Scrum is often perceived as a methodology; 
+but rather than viewing Scrum as methodology, think of it as a framework for managing a process
+
+
+what is the process in agile model
+
+Agile SDLC model is a combination of iterative and incremental process models with focus on process adaptability and customer satisfaction by rapid delivery of
+ working software product. Agile Methods break the product into small incremental builds. These builds are provided in iterations.
+
+what is product back log items
+
+Product Backlog Item. In Scrum, a product backlog item ("PBI", "backlog item", or "item") is 
+a unit of work small enough to be completed by a team in one Sprint iteration. Backlog items are decomposed into one or more tasks.
+
+what is user story/feature/sprint back log items and tasks in user story
+
+A user story is a tool used in Agile software development to capture a description of a software feature from an end-user perspective. The user story 
+describes the type of user, what they want and why. A user story helps to create a simplified description of a requirement.
+User stories are one of the primary development artifacts for Scrum and Extreme Programming (XP) project teams. A user story is a very high-level definition of a requirement, 
+containing just enough information so that the developers can produce a reasonable estimate of the effort to implement it.
+
+what is sprint planing meeting
+
+Sprint planning is a collaborative effort involving a ScrumMaster, who facilitates the meeting, a Product Owner, who clarifies the details of the product backlog items 
+and their respective acceptance criteria, and the Entire Agile Team, who define the work and effort necessary to meet 
+their sprint commitment
+
+what is spring review meeting
+The sprint review meeting is intentionally kept very informal, typically with rules forbidding the use of PowerPoint slides and 
+allowing no more than two hours of preparation time for the meeting. A sprint review meeting should not become a distraction or
+ significant detour for the team; rather, it should be a natural result of the sprint.
+
+what is sprint retrospective 
+The sprint retrospective is a meeting facilitated by the ScrumMaster at which the team discusses the just-concluded 
+sprint and determines what could be changed that might make the next sprint more productive.
+
+What is sprint grooming
+Product backlog refinement—sometimes called product backlog grooming in reference to keeping the backlog clean and orderly—is a meeting 
+that is held near the end of one sprint to ensure the backlog is ready for the next sprint.
+
+what is burndown chart and velocity
+Simple Burndown Chart. The rate of progress of a Scrum Team is called "velocity". It expresses the amount of e.g. story points completed per iteration. An import rule for 
+calculating the velocity is that only stories that are completed at the end of the iteration are counted.
+
+what is user acceptance criteria test cases
+Business creates requirements and acceptance criteria for a user story.
+QA reviews and begins writing test cases.
+While examining test cases, QA identifies a scenario that is not covered by the requirements.
+QA communicates the scenario to the Business Analyst.
+BA realizes a change to requirements.
+
+ what is v model?
+The V - model is SDLC model where execution of processes happens in a sequential manner in V-shape. It is also known as Verification and Validation model. V - Model is an extension of the
+ waterfall model and is based on association of a testing phase for each corresponding development stage.
+
+What is STLC
+Software Testing Life Cycle (STLC) is the testing process which is executed in systematic and planned manner. 
+In STLC process, different activities are carried out to improve the quality of the product. ... Test Execution
+
+Software Defects/ Bugs are normally classified as per:
+
+Severity / Impact (See Defect Severity)
+Probability / Visibility (See Defect Probability)
+Priority / Urgency (See Defect Priority)
+Related Dimension of Quality (See Dimensions of Quality)
+Related Module / Component
+Phase Detected
+Phase Injected
+
+
+how to arise a defect and what we specify while logging defect?
+Defect logging, a process of finding defects in the application under test or product by testing or recording 
+feedback from customers and making new versions of the product that fix the defects or the clients feedback.
+Defect Tracking Parameters
+Defects are tracked based on various parameters such as:
+
+Defect Id
+
+Priority
+
+Severity
+
+Created by
+
+Created Date
+
+Assigned to
+
+Resolved Date
+
+Resolved By
+
+Status
+
+
+What is defect lifecycle
+Defect life cycle is a cycle which a defect goes through during its lifetime. It starts when defect is found and ends 
+when a defect is closed, after ensuring it’s not reproduced. Defect life cycle is related to the bug found during testing.
+
+What is unit testing?
+Unit testing is a software development process in which the smallest testable parts of an application, called units, are 
+individually and independently scrutinized for proper operation. Unit testing can be done manually but is often automated.
+
+when do we use regression testing?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
