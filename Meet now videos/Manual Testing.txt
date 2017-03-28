@@ -1,0 +1,211 @@
+Testing
+-------
+-> Using the tesing we are test the software projects.
+
+-> We find the errors , bugs , all recuriments are statiesfie or not.
+
+
+Softare Projects
+----------------
+
+-> Windows Application
+
+-> Websites
+
+-> Mobile application
+
+
+Testing Softwares
+-----------------
+
+1) Manual Testing : Write the Testcase templates
+
+2) selenium : We are test websites 
+
+3) QTP / UFT : We are Test the windows application 
+
+4) Cucumber : We are test websites 
+
+5) SOAP UI : We are test webservices 
+
+6) Jira : We are maintain the testing reports or managements
+
+7) Appeium  : We are test the mobile application (IOS , Andorid ).
+
+
+Manual Testing 
+--------------
+
+-> The manual testing is a testing process that is carried out a manually in order to find the errors and bugs or any problem in our project with out using any automation tool.In Our manual testing we are give the testing data is also manually.
+
+
+Type of Manual Testing
+----------------------
+
+1) Acceptance Testing : client Level Testing 
+
+2) Integration Testing : Project Module Level Testing
+
+3) System Testing : Project Level Testing 
+
+4) Unit Testing : Developer Level Testing  
+
+5) White Box Testing : Developer Level Testing
+
+6) Black Box Testing : Developer Level Testing
+
+
+
+Testing Levels 
+--------------
+
+1) Unit Testing  : Developer Testing .
+
+2) Module Level Testing : Combined All forms testing 
+
+3) Integration Level Testing : Combined all modules 
+
+	a) To - Down Approach
+
+	b) Bottom - Up approach
+
+	c) Hybrid Apporach
+
+	d) Big Bang Approach
+
+
+
+4) System Level Testing : This project working properly in our system (window 7 , window 8...etc).
+
+5) Acceptance Level Testing : This type of checking check using client.
+
+Software Developement Life Cycle (SDLC)
+---------------------------------------
+
+1) Initial Phase 
+
+	-> In This phase we are gather the all project information from the client and maintain the documents.
+
+		a) Business Requriments Specification Docuemnts 
+
+		b) Customer Requriments Specification Documents
+
+		c) Functional Requriments Specification documents.
+
+
+
+
+
+
+2) Analysis Phase
+
+	-> In this phase we are analysis the client douments and then prepare the some list of documnets
+
+		a) Feasability study
+
+		b) Planning doument
+
+		c) Environmen selection doucments
+
+		d) Software Requriments documnets.
+
+		e) UML Diagrams.
+
+
+
+
+3) Design Phase
+
+	-> In This phase we are start the desing of the project.
+
+		a) High level Desing
+
+		b) Low Level Desing
+
+		
+
+
+4) Coding Phase
+
+	-> In this phase we are write the Project codeing .
+
+
+		a) Code Documents
+
+
+5) Testing Phase 
+
+	1) TestCase Template
+
+	b) Automation Script Documents
+
+
+6) Maintance & Delivery Phase
+
+	-> This Phase is used at the time of delivery to clinet .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+Testing :
+--------
+
+-> Using testing we are test the software projects.then we find the bug , erros , any client requriments,running...etc.,
+
+
+What are the software project
+------------------------------
+
+-> Windows application
+
+-> Websites
+
+-> Mobile applications.
+
+
+
+What are the testing softwares
+------------------------------
+
+-> Manual Testing : We are write the testcase templates.
+
+-> Selenium  : we are test websites.
+
+-> Cucumber : We are test websites. (Advanced)
+
+-> SOAP UI : We are test Webservices
+
+-> QTP(Quick Test Profisional)/UFT (Unified Functional Test). : We are test the windows application 
+
+-> JIRA Tool :JIRA is a tool developed by Australian Company Atlassian. It is used for bug tracking, issue tracking, and project 		      management. 
+
+-> Appium : We are testing mobile application (Android , IOS).
+
+
+
