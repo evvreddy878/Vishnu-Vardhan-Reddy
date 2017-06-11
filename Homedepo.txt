@@ -1,0 +1,63 @@
+package question.java;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Homedepot {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		
+		System.setProperty("webdriver.gecko.driver", "C:/geckodriver-v0.16.1-win64/geckodriver.exe");
+		
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("http://www.homedepot.com/");
+		
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath(".//*[@id='headerMyAccount']")).click();
+		
+		Thread.sleep(3000);
+		
+		
+		driver.findElement(By.xpath(".//*[@id='authSignIn']/span/a")).click();
+		
+		driver.findElement(By.xpath(".//*[@id='email_id']")).sendKeys("csrujan18218@gmail.com");
+		
+		driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("Powerstar@1");
+		
+		driver.findElement(By.xpath(".//*[@id='accountSignIn']")).click();
+		
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath(".//*[@id='headerSearch']")).sendKeys("Hammers");
+		
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath(".//*[@id='headerSearchButton']")).click();
+		
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath(".//*[@id='topnavCore']/div[3]/div[4]/a/span[2]")).click();
+		
+		driver.findElement(By.xpath(".//*[@id='products']/div/div[2]/div/div[11]/div/a/span")).click();
+		
+		WebDriverWait wait = new WebDriverWait(driver,12);
+		WebElement AddtoCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='products']/div/div[2]/div/div[11]/div/a/span")));
+		AddtoCart.click();
+		
+		System.out.println("Is Item added to cart: " + AddtoCart.isDisplayed());
+		
+	
+		
+		
+				
+	}
+
+}
