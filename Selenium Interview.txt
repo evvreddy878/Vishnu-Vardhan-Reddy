@@ -1,0 +1,430 @@
+1) What is Selenium and what is composed of?
+
+Selenium is a suite of tools for automated web testing.  It is composed of
+
+*Selenium IDE (Integrated Development Environment) :  It is a tool for recording and playing back.  It is a firefox plugin
+*WebDriver and RC:  It provide the APIs for a variety of languages like Java, .NET, PHP, etc. With most of the browsers Webdriver and RC works.
+*Grid: With the help of Grid you can distribute tests on multiple machines so that test can be run parallel which helps in cutting down the time
+ required for running in browser test suites .
+
+2) How will you find an element using Selenium?
+
+In Selenium every object or control in a web page is referred as an elements, there are different ways to find an element in a web page they are
+
+ID
+Name
+Tag
+Attribute
+CSS
+Linktext
+PartialLink Text
+Xpath etc
+
+3) List out the test types that are supported by Selenium?
+
+For web based application testing selenium can be used
+
+The test types can be supported are
+
+a) Functional, Learn More about Functional Testing.
+
+b) Regression
+
+For post release validation with continuous integration automation tool could be used
+
+a) Jenkins
+
+b) Hudson
+
+c) Quick Build
+
+d) CruiseCont
+
+4) Explain what is assertion in Selenium and what are the types of assertion?
+
+Assertion is used as a  verification point. It verifies that the state of the application conforms to what is expected.  The types of assertion are “assert” , “verify” and “waifFor”.
+
+
+5) List out the test types that are supported by Selenium?
+
+For web based application testing selenium can be used
+
+The test types can be supported are
+
+a) Functional, Learn More about Functional Testing.
+
+b) Regression
+
+For post release validation with continuous integration automation tool could be used
+
+a) Jenkins
+
+b) Hudson
+
+c) Quick Build
+
+d) CruiseCont
+
+6) Explain what is assertion in Selenium and what are the types of assertion?
+
+Assertion is used as a  verification point. It verifies that the state of the application conforms to what is expected.  The types of assertion are “assert” , “verify” and “waifFor”.
+
+7) Mention what is the use of X-path?
+
+X-Path is used to find the WebElement in web pages. It is also useful in identifying the dynamic elements.
+
+Refer Complete Guide on XPath
+
+8) Explain the difference between single and double slash in X-path? Single slash ‘/ ’
+
+Single slash ( / ) start selection from the document node
+It allows you to create ‘absolute’ path expressions
+Double Slash ‘// ’
+Double slash ( // ) start selection matching anywhere in the document
+It enables to create ‘relative’ path expressions
+
+9) List out the technical challenges with Selenium? Technical challenges with Selenium are
+
+Selenium supports only web based applications
+It does not support the Bitmap comparison
+For any reporting related capabilities have to depend on third party tools
+No vendor support for tool compared to commercial tools like HP UFT
+As there is no object repository concept in Selenium, maintainability of objects becomes difficult
+
+10) What is the difference between type keys and type commands ?
+
+TypeKeys() will trigger JavaScript event in most of the cases whereas .type() won’t. Type key populates the value attribute using JavaScript whereas .typekeys() emulates like actual user typing
+
+11) What is the difference between verify and assert commands?
+
+Assert:  Assert allows to check whether an element is on the page or not. The test will stop on the step failed, if the asserted element is not available. In other words, the test will terminated at the point where check fails.
+
+Verify: Verify command will check whether the element is on the page, if it is not then the test will carry on executing.  In verification, all the commands are going to run guaranteed even if any of test fails.
+
+12) What is JUnit Annotations and what are different types of annotations which are useful ?
+
+In JAVA a special form of syntactic meta-data can be added to Java source code, this is know as Annotations.  Variables, parameters, packages, methods and classes are annotated some of the Junit annotations which can be useful are
+
+Test
+Before
+After
+Ignore
+BeforeClass
+AfterClass
+RunWith
+
+13) While using click command can you use screen coordinate? 
+
+To click on specific part of element, you would need to use clickAT command.  ClickAt command accepts element locator and x, y co-ordinates as arguments- clickAt (locator, cordString)
+
+14)  What are the advantages of Selenium?
+
+It supports C#, PHP, Java, Perl, Phython
+It supports different OS like Windows, Linux and Mac OS
+It has got powerful methods to locate elements (Xpath, DOM , CSS)
+It has highly developer community supported by Google
+15) Why testers should opt for Selenium and not QTP? Selenium is more popular than QTP as
+
+Selenium is an open source whereas QTP is a commercial tool
+Selenium is used specially for testing web based applications while QTP can be used for testing client server application also
+Selenium supports Firefox, IE, Opera, Safari  on operating systems like Windows, Mac, Linux etc. however QTP is limited to Internet Explorer on Windows.
+Selenium supports many programming languages like Ruby, Perl, Python whereas QTP supports only VB script
+16) What are the four parameter you have to pass in Selenium? Four parameters that you have to pass in Selenium are
+
+Host
+Port Number
+Browser
+URL
+17) What is the difference between setSpeed() and sleep() methods?
+
+Both will delay the speed of execution.
+
+Thread.sleep () :  It will stop the current (java) thread for the specified period of time.  Its done only once
+
+It takes a single argument in integer format
+Ex: thread.sleep(2000)- It will wait for 2 seconds
+It waits only once at the command given at sleep
+SetSpeed () :  For specific amount of time it will stop the execution for every selenium command.
+It takes a single argument in integer format
+Ex: selenium.setSpeed(“2000”)- It will wait for 2 seconds
+Runs each command  after setSpeed delay by the number of milliseconds mentioned in set Speed
+This command is useful for  demonstration purpose or if you are using a slow web application
+18) What is same origin policy? How you can avoid same origin policy?
+
+The “Same Origin Policy” is introduced for security reason, and it ensures that content of your site will never be accessible by a script from another site.  As per the policy, any code loaded within the browser can only operate within that website’s domain.
+
+To avoid “Same Origin Policy” proxy injection method is used, in proxy injection mode the Selenium Server acts as a client configured HTTP proxy , which sits between the browser and application under test and then masks the AUT under a fictional URL
+
+19) What is heightened privileges browsers?
+
+The purpose of heightened privileges is similar to Proxy Injection, allows websites to do something that are not commonly permitted.  The key difference is that the browsers are launced in a special mode called heightened privileges.  By using these browser mode, Selenium core can open the AUT directly and also read/write its content without passing the whole AUT through the Selenium RC server.
+
+20) How you can use “submit” a form using Selenium ?
+
+You can use “submit” method on element to submit form-
+
+element.submit () ;
+
+Alternatively you can use click method on the element which does form submission
+
+21) What are the features of TestNG and list some of the functionality in TestNG which makes it more effective?
+
+TestNG is a testing framework based on JUnit and NUnit to simplify a broad range of testing needs, from unit testing to integration testing. And the functionality which makes it efficient testing framework are
+
+Support for annotations
+Support for data-driven testing
+Flexible test configuration
+Ability to re-execute failed test cases
+22) Mention what is the difference between Implicit wait and Explicit wait?
+
+Implicit Wait: Sets a timeout for all successive Web Element searches. For the specified amount of time it will try looking for element again and again before throwing a NoSuchElementException.  It waits for elements to show up.
+
+Explicit Wait :  It is a one-timer, used for a particular search.
+
+23) Which attribute you should consider throughout the script in frame for “if no frame Id as well as no frame name”?
+
+You can use…..driver.findElements(By.xpath(“//iframe”))….
+
+This will return list of frames.
+
+You will ned to  switch to each and every frame and search for locator which we want.
+
+Then break the loop
+
+24) Explain what is the difference between find elements () and find element () ?
+
+find element ():
+
+It finds the first element within the current page using the given “locating mechanism”.  It returns a single WebElement
+
+findElements () : Using the given “locating mechanism” find all the elements within the current page.  It returns a list of web elements.
+
+25) Explain what are the JUnits annotation linked with Selenium?
+
+The JUnits annotation linked with Selenium are
+
+@Before public void method() – It will perform the method () before each test, this method can prepare the test
+@Test public void method() – Annotations @Test identifies that this method is a test method environment
+@After public void method()- To execute a method before this annotation is used, test method must start with test@Before
+26) Explain what is Datadriven framework and Keyword driven?
+
+Datadriven framework:  In this framework, the test data is separated and kept outside the Test Scripts, while test case logic resides in Test Scripts.  Test data is read from the external files ( Excel Files) and are loaded into the variables inside the Test Script.  Variables are used for both for input values and for verification values.
+
+Keyworddriven framework: The keyword driven frameworks requires the development of data tables and keywords, independent of the test automation.  In a keyword driven test, the functionality of the application under test is documented in a table as well as step by step instructions for each test.
+
+27) Explain how you can login into any site if it’s showing any authentication popup for password and username?
+
+Pass the username and password with url
+
+Syntax-http://username:password@url
+ex- http://creyate:tom@www.gmail.com
+28) Explain how to assert text of webpage using selenium 2.0 ?
+
+WebElement el = driver.findElement(By.id(“ElementID”))
+
+//get test from element and stored in text variable
+
+String text = el.getText();
+
+//assert text from expected
+
+Assert.assertEquals(“Element Text”, text);
+
+29) Explain what is the difference between Borland Silk and Selenium?
+
+                          Silk Test Tool	                        Selenium Test Tool
+Borland Silk test is not a free testing tool
+Selenium is completely free test automation tool
+Silk test supports only Internet Explorer and Firefox
+Selenium supports many browsers like Internet Explorer, Firefox, Safari, Opera and so on
+Silk test uses test scripting language
+Selenium suite has the flexibility to use many languages like Java, Ruby,Perl and so on
+Silk test can be used for client server applications
+Selenium can be used for only web application
+30) What is Object Repository ?
+
+An object repository is an essential entity in any UI automations which allows a tester to store all object that will be used in the scripts in one or more centralized locations rather than scattered all over the test scripts.
+
+31) Explain how Selenium Grid works?
+
+Selenium Grid sent the tests to the hub. These tests are redirected to Selenium Webdriver, which launch the browser and run the test.  With entire test suite, it allows for running tests in parallel.
+
+
+32) Can we use Selenium grid for performance testing?
+
+Yes. But not as effectively as a dedicated performance testing tool like Loadrunner.
+
+
+33)  List the advantages of Webdriver over Selenium Server?
+
+If you are using Selenium-WebDriver, you don’t need the Selenium Server as it is using totally different technology
+Selenium Server provides Selenium RC functionality which is used for Selenium 1.0 backwards compatibility
+Selenium Web driver makes direct calls to browser using each browsers native support for automation, while Selenium RC requires selenium server to inject Javascript into the browser
+
+34)  Mention what are the capabilities of Selenium WebDriver or Selenium 2.0 ?
+
+WebDriver should be used when requiring improvement support for
+
+Handling multiple frames, pop ups , multiple browser windows and alerts
+Page navigation and drag & drop
+Ajax based UI elements
+Multi browser testing including improved functionality for browser not well supported by Selenium 1.0
+
+35)  While injecting capabilities in webdriver to perform tests on a browser which is not supported by a webdriver what is the limitation that one can come across?
+
+Major limitation of injecting capabilities is that “findElement” command may not work as expected.
+
+
+36)  Explain how you can find broken images in a page using Selenium Web driver ?
+
+To find the broken images in a page using Selenium web driver is
+
+Get Xpath and get all the links in the page using tag name
+In the page click on each and every link
+Look for 404/500 in the target page title
+
+37)  Explain how you can handle colors in web driver?
+
+To handle colors in web driver you can use
+
+Use getCssValue(arg0) function to get the colors by sending ‘color’ string as an argument
+
+
+38)  Using web driver how you can store a value which is text box?
+
+You can use following command to store a value which is text box using web driver
+
+driver.findElement(By.id(“your Textbox”)).sendKeys(“your keyword”);
+
+
+39)  Explain how you can switch between frames?
+
+To switch between frames webdrivers [ driver.switchTo().frame() ] method takes one of the three possible arguments
+
+A number:  It selects the number by its (zero-based) index
+A number or ID: Select a frame by its name or ID
+Previously found WebElement: Using its previously located WebElement select a frame
+
+40)  Mention 5 different exceptions you had in Selenium web driver?
+
+The 5 different exceptions you had in Selenium web drivers are
+
+WebDriverException
+NoAlertPresentException
+NoSuchWindowException
+NoSuchElementException
+TimeoutException
+
+
+41)  Explain using Webdriver how you can perform double click ?
+
+You can perform double click by using
+
+Syntax- Actions act = new Actions (driver);
+act.doubleClick(webelement);
+42) How will you use  Selenium to upload a file ?
+
+You can use “type”command to type in a file input box of upload file. Then, you have to use “Robot” class in JAVA to make file upload work.
+
+
+
+43) Which web driver implementation is fastest?
+
+
+HTMLUnit Driver implementation is fastest, HTMLUnitDriver does not execute tests on browser but plain http request, which is far quick than launching a browser and executing tests
+
+
+44) Explain how you can handle frames using Selenium 2.0 ?
+
+
+To bring control on HTML frame you can use “SwitchTo” frame method-
+
+driver.switchTo().frame(“frameName”);
+
+To specify a frame you can use index number
+
+driver.switchTo().frame(“parentFrame.4.frameName”);
+
+This would bring control on frame named- “frameName” of the 4th sub frame names “parentFrame”
+
+
+45) What is the difference between getWindowhandles() and getwindowhandle() ?
+
+getwindowhandles(): It is used to get the address of all the open browser and its return type is iterator<String>
+
+getwindowhandle(): It is used to get the address of the current browser where the control is and return type is string
+
+
+46) Explain how you can switch back from a frame?
+
+To switch back from a frame use method defaultContent()
+
+Syntax-driver.switchTo().defaultContent();
+
+
+47) List out different types of locators?
+
+Different types of locators are
+
+By.id()
+By.name()
+By.tagName()
+By.className()
+By.linkText()
+By.partialLinkText()
+By.xpath
+By.cssSelector()
+48) What is the command that is used in order to display the values of a variable into the output console or log?
+
+In order to display a constant string, command can be used is echo <constant string>
+If order to display the value of a variable you can use command like echo ${variable name>>
+Above is using PHP. If you are using Java, replace echo with System.out.println
+
+49)   Explain how you can use recovery scenario with Selenium?
+
+Recovery scenarios depends upon the programming language you use.  If you are using Java then you can use exception handling to overcome same.  By using “Try Catch Block” within your Selenium WebDriver Java tests
+
+50) Explain how to iterate through options in test script?
+
+To iterate through options in test script you can loop features of the programming language, for example to type different test data in a text box you can use “for” loop in Java
+
+// test data collection in an array
+
+String[ ] testData = { “test1” , “test2” , “test3” } ;
+
+// iterate through each test data
+
+For  (string s: test data) { selenium.type ( “elementLocator”, testData) ; }
+
+51) How can you prepare customized html report using TestNG in hybrid framework ?
+
+There are three ways
+
+Junit: With the help of ANT
+TestNG: Using inbuilt default.html to get the HTML report. Also XST reports from ANT, Selenium, TestNG combinations
+Using our own customized reports using XSL jar for converting XML content to HTML
+
+
+52) From your test script how you can create html test report?
+
+To create html test report there are three ways
+
+TestNG:  Using inbuilt default.html to get the HTML report. Also XLST reports from ANT, Selenium, TestNG combination
+JUnit: With the help of ANT
+Using our own customized reports using XSL jar for converting XML content to HTML
+53)  Explain how you can insert a break point in Selenium IDE ?
+
+In Selenium IDE to insert a break point
+
+Select “Toggle break point” by right click on the command in Selenium IDE
+Press “B” on the keyboard and select the command in Selenium IDE
+Multiple break points can be set in Selenium IDE
+
+
+54)  Explain in Selenium IDE how can you debug the tests?
+
+Insert a break point from the location from where you want to execute test step by step
+Run the test case
+At the given break point execution will be paused
+To continue with the next statement click on the blue button
+Click on the “Run” button to continue executing all the commands at a time
